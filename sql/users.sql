@@ -68,7 +68,7 @@ $$ LANGUAGE plpgsql;
 
 
 
-select * from users.users;
+select * from users.users order by last_visited desc;
 
 alter table users.users add column country text;
 alter table users.users add column ip_address text;
